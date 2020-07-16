@@ -1,0 +1,332 @@
+*{
+    font-family: 'Teko', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header-content-right{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+}
+
+.navbar-brand{
+    font-size: 2em;
+}
+
+.nav-link, a{
+    color: white;
+}
+.navbar{
+    background-color:  #212f3d ;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    min-height: 80px;
+}
+
+.nav-link{
+    color: white;
+    font-size: 1.5em;
+}
+
+.nav-link:hover{
+    color: grey;
+}
+
+.navbar-toggler{
+    font-size: 40px;
+    margin-top: .3em;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+
+
+
+#seccion-princ{
+    background-image: url(/img/Code_presentation_background.png);
+    margin-top: 3em;
+}
+
+.header-content-left img{
+    border-radius: 50%;
+}
+
+.header-content-right{
+    color: white;
+    margin-top: -4em;
+    margin-bottom: 4em;
+}
+
+.header-content-right, h1{
+    font-size: 3em;
+}
+.header-content-right, p{
+    font-size: 1.5em;
+}
+
+.yo{
+    margin-top: 1.5em;
+    text-align: center;
+    align-items: center;
+    background-color:  #d6dbdf;
+}
+
+.seccion-sobremi, .yo{
+    padding-top: 1em;
+    padding-bottom: 4em;
+    margin-top: 0px;
+    color:  #2c3e50;
+}
+
+.seccion-sobremi .container, h1{
+    margin-top: 1.5em;
+    text-align: center;
+    align-items: center;
+    padding-top: 1.7em;
+}
+
+.seccion-sobremi .container, p{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-sobremi, .yo #icono{
+    font-size: 3em;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color:  #2c3e50;
+    padding-top: -1em;
+    padding-bottom: -7em;
+}
+
+.seccion-sobremi, .yo #icono:hover{
+    color:   #f8f9f9;
+    transition: color .5s;
+}
+
+#servicios{
+    background-color:   white;
+    color: #2c3e50;
+}
+
+#servicios, h1{
+    margin-top: 0px;
+}
+
+#servicios .row{
+    margin-top: 5em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5em;
+}
+
+
+.row .col-md-4{
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+.row .servicios-item{
+    margin-bottom: -2em;
+}
+
+.row .servicios-item #icono-serv{
+    font-size: 3em;
+    
+}
+
+.row .servicios-item .content-icon{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    padding-top: 26px;
+    padding-bottom: 65px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+
+
+#portafolio{
+    background-color: #212f3d;
+    color: white;
+    height: 500px;
+}
+
+.contacto{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.contacto, #titulo-contacto{
+    font-size: 1.5em;
+}
+
+.contacto, #parrafo-contacto{
+    font-size: 1.5em;
+}
+
+.contacto, #btn-contacto{
+    font-size: 1.3em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.contacto  #btn-contacto:hover{
+    background-color: #2c3e50;
+    transition: background-color .5s;
+    color: white;
+}
+
+
+
+
+.pie-pagina{
+    background-color: #d6dbdf;
+    height: 300px;
+    margin-top: 3em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3em;
+}
+
+.pie-pagina h1{
+    font-size: 30px;
+    margin-bottom: .5em;
+    margin-top: -1em;
+    padding: 2em;
+    color:  #2c3e50;
+}
+
+.pie-pagina, #icono{
+    font-size: 1.5em;
+    color:  #2c3e50;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: -1em;
+    padding-bottom: -7em;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.pie-pagina, #icono:hover{
+    color:   #f8f9f9;
+    transition: color .5s;
+}
+
+
+
+
+
+/*ANIMACIONES DE LA PAGINA*/
+
+.animado{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mostrarArriba{
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba{
+    0%{
+        transform: translateY(60px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/*ANIMACIONES DE LA PAGINA*/
+
+
+/*MEDIA QUERYS*/
+
+@media screen and (min-width:768px){
+    .header-content-right{
+        color: white;
+        margin-top: -1em;
+        margin-bottom: 4em;
+    }
+
+    .seccion-sobremi, .yo #icono{
+        
+        padding-top: 0em;
+        padding-bottom: 0em;
+    }
+
+    .contacto{
+        margin-top: 1em;
+        margin-bottom: 6em;
+    }
+
+    .contacto, #titulo-contacto{
+        font-size: 2.5em;
+    }
+
+
+    .contacto, #parrafo-contacto{
+        font-size: 1.5em;
+    }
+
+    .pie-pagina{
+        height: 100%;
+        margin-top: 3em;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-top: 3em;
+    }
+  
+
+    .pie-pagina, #icono{
+        font-size: 1.8em;
+        color:  #2c3e50;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0em;
+    }
+
+    .pie-pagina h1{
+        font-size: 30px;
+        margin-bottom: .5em;
+        margin-top: -1em;
+        padding: 2em;
+    }
+
+    .pie-padding{
+        padding-top: 5em;
+    }
+
+
+}
+
+@media screen and (min-width:992px){
+    .header-content-right{
+        color: white;
+        margin-top: 1em;
+        margin-bottom: 4em;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .header-content-right{
+        color: white;
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+}
+
+
+
+
